@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/lib/angular.min.js"></script>
         <script src="assets/lib/angular-route.min.js"></script>
         <script src="assets/lib/angular-resource.min.js"></script>
@@ -15,6 +16,7 @@
         <script src="app/components/home/controllers/homeController.js"></script>
         <script src="app/components/forecast/controllers/forecastController.js"></script>
         <script src="app/components/forecast/directives/weatherReport.js"></script>
+        <script src="assets/js/custom.js"></script>
     </head>
     <body>
         <herader>
@@ -35,5 +37,10 @@
             <div ng-view></div>
 
         </div>
+        <div id="fade"></div>
+        <div id="modal">
+            <img id="loader" src="assets/img/ajax-loader.gif" />
+        </div>
+
     </body>
 </html>

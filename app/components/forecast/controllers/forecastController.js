@@ -2,7 +2,7 @@ weatherApp.controller('forecastController', ['$scope', '$resource', '$routeParam
     function($scope, $resource, $routeParams, cityService, weatherService) {
 
         $scope.city = cityService.city;
-        $scope.days = $routeParams.days || 5;
+        $scope.days = $routeParams.days || '5';
 
         $scope.weatherResults = weatherService.getWeather($scope.city, $scope.days);
 

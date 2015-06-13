@@ -5,7 +5,9 @@
 Forecast for: {{ city }}
 
 <hr/>
-Days: <a href="#/forecast/5">5</a> | <a href="#/forecast/7">7</a> | <a href="#/forecast/10">10</a>
+Days: <a href="#/forecast/5" ng-class="{'d-selected':days === '5'}">5</a> |
+      <a href="#/forecast/7" ng-class="{'d-selected':days === '7'}">7</a> |
+      <a href="#/forecast/10" ng-class="{'d-selected':days === '10'}">10</a>
 <hr/>
 <div ng-repeat="weather in weatherResults.list">
     <div class="row">
