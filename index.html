@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+    <head>
+        <title>My App</title>
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="assets/lib/angular.min.js"></script>
+        <script src="assets/lib/angular-route.min.js"></script>
+        <script src="assets/lib/angular-resource.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/routes.js"></script>
+        <script src="app/components/home/services/cityService.js"></script>
+        <script src="app/components/forecast/services/weatherService.js"></script>
+        <script src="app/components/home/controllers/homeController.js"></script>
+        <script src="app/components/forecast/controllers/forecastController.js"></script>
+        <script src="app/components/forecast/directives/weatherReport.js"></script>
+    </head>
+    <body>
+        <herader>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <p class="navbar-brand">AngularJS Weather</p>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/"><i class="fa fa-fome"></i></i> Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </herader>
+
+        <div class="container">
+
+            <div ng-view></div>
+
+        </div>
+    </body>
+</html>
